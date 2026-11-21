@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IMDb inspired movie discovery homepage redesign.">
+    <title>IMDb | Movies, TV and Celebrities</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#" aria-label="IMDb home">IMDb</a>
+            <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Open navigation menu">
+            <label class="menu-button" for="menu-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></label>
+            <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+                <a href="#">Movies</a>
+                <a href="#">TV Shows</a>
+                <a href="#">Celebs</a>
+                <a href="#">Watch</a>
+                <a href="#">Awards</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-trigger">Community <span aria-hidden="true">⌄</span></a>
+                    <div class="nav-dropdown-panel"><a href="#">News and discussions</a></div>
+                </div>
+            </nav>
+            <form class="search-form" action="#" method="get">
+                <label class="visually-hidden" for="search-category">Search category</label>
+                <select id="search-category" aria-label="Search category">
+                    <option>All</option>
+                    <option>Titles</option>
+                    <option>TV Episodes</option>
+                    <option>Names</option>
+                </select>
+                <label class="visually-hidden" for="site-search">Search IMDb</label>
+                <input id="site-search" type="search" placeholder="Search IMDb">
+                <button type="submit" aria-label="Search">⌕</button>
+            </form>
+            <div class="header-actions">
+                <a href="#" class="watchlist"><span class="bookmark-icon">▮</span> Watchlist</a>
+                <a href="#" class="user-link"><span class="user-icon">●</span> User</a>
+                <button class="language-button">EN <span>⌄</span></button>
+                <button class="settings-button" aria-label="Settings">⚙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="hero-section">
+            <div class="hero-feature">
+                <img class="hero-image" src="assets/image 20.png" alt="Inside Out 2 featured scene">
+                <div class="hero-shade"></div>
+                <div class="hero-poster">
+                    <img src="assets/image 24.png" alt="Inside Out 2 poster artwork">
+                </div>
+                <button class="hero-play" aria-label="Play featured trailer">▶</button>
+                <div class="hero-copy">
+                    <p class="eyebrow">Featured video</p>
+                    <h1>‘Inside Out 2’ Makes Us<br>Feel Every Emotion</h1>
+                    <p>Watch the new ‘Inside Out’ trailer</p>
+                </div>
+            </div>
+            <aside class="featured-sidebar">
+                <div class="section-heading sidebar-heading">
+                    <h2>Featured Videos</h2>
+                    <a href="#">Browse Trailers <span>›</span></a>
+                </div>
+                <a href="#" class="featured-video">
+                    <img src="assets/poster-star-wars.jpg" alt="">
+                    <span class="video-info"><strong>Welcome to the Apocalypse!</strong><small>Watch the new ‘Fallout’ Trailer</small><em>3:18</em></span>
+                    <span class="mini-play">▶</span>
+                </a>
+                <a href="#" class="featured-video">
+                    <img src="assets/hero-inside-out.jpg" alt="">
+                    <span class="video-info"><strong>‘Inside Out 2’ Make Us Feel Every Emotion</strong><small>Watch the new ‘Fallout’ Trailer</small><em>3:18</em></span>
+                    <span class="mini-play">▶</span>
+                </a>
+                <a href="#" class="featured-video">
+                    <img src="assets/poster-interstellar.jpg" alt="">
+                    <span class="video-info"><strong>Where Might Dune Go Next?</strong><small>Our ‘Dune: Part Three’ Theories</small><em>3:11</em></span>
+                    <span class="mini-play">▶</span>
+                </a>
+            </aside>
+        </section>
+
+        <section class="content-section featured-today">
+            <div class="section-heading">
+                <h2>Featured Today</h2>
+                <div class="slider-arrows" data-slider-controls="slider-1"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div>
+            </div>
+            <div class="today-grid" data-slider-track>
+                <a class="today-card" href="#"><img src="assets/poster-star-wars.jpg" alt=""><div><strong>Staff Picks: What to Watch in March</strong><small>See our picks</small></div></a>
+                <a class="today-card" href="#"><img src="assets/poster-arrival.jpg" alt=""><div><strong>21st Century Scream Queens</strong><small>See the gallery</small></div></a>
+                <a class="today-card" href="#"><img src="assets/poster-lotr.jpg" alt=""><div><strong>Everything New on Max in March</strong><small>See the list</small></div></a>
+                <a class="today-card" href="#"><img src="assets/originals-timothee.jpg" alt=""><div><strong>Spring Preview: 10 Films to Catch</strong><small>See the photos</small></div></a>
+            </div>
+        </section>
+
+        <section class="content-section movie-section">
+            <div class="section-heading">
+                <div><h2>Top Picks <span class="heading-arrow">→</span></h2><p>TV shows and movies just for you</p></div>
+                <div class="slider-arrows" data-slider-controls="slider-2"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div>
+            </div>
+            <div class="movie-grid" data-slider-track>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Star Wars: Episode V to watchlist">＋</button><img src="assets/poster-star-wars.jpg" loading="lazy" decoding="async" alt="Star Wars: Episode V poster"><h3 title="Star Wars: Episode V">Star Wars: Episode V</h3><div class="rating"><span>★ 8.7</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Spider-Man: Across the Spider-Verse to watchlist">＋</button><img src="assets/poster-spider-man.jpg" loading="lazy" decoding="async" alt="Spider-Man: Across the Spider-Verse poster"><h3 title="Spider-Man: Across the Spider-Verse">Spider-Man: Across the Spider-Verse</h3><div class="rating"><span>★ 8.6</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Interstellar to watchlist">＋</button><img src="assets/poster-interstellar.jpg" loading="lazy" decoding="async" alt="Interstellar poster"><h3 title="Interstellar">Interstellar</h3><div class="rating"><span>★ 8.7</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Arrival to watchlist">＋</button><img src="assets/poster-arrival.jpg" loading="lazy" decoding="async" alt="Arrival poster"><h3 title="Arrival">Arrival</h3><div class="rating"><span>★ 7.9</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Inception to watchlist">＋</button><img src="assets/poster-inception.jpg" loading="lazy" decoding="async" alt="Inception poster"><h3 title="Inception">Inception</h3><div class="rating"><span>★ 8.8</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add The Lord of the Rings to watchlist">＋</button><img src="assets/poster-lotr.jpg" loading="lazy" decoding="async" alt="The Lord of the Rings poster"><h3 title="The Lord of the Rings">The Lord of the Rings</h3><div class="rating"><span>★ 8.8</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add The Dark Knight to watchlist">＋</button><img src="assets/poster-star-wars.jpg" loading="lazy" decoding="async" alt="The Dark Knight poster"><h3 title="The Dark Knight">The Dark Knight</h3><div class="rating"><span>★ 9.0</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Pulp Fiction to watchlist">＋</button><img src="assets/poster-spider-man.jpg" loading="lazy" decoding="async" alt="Pulp Fiction poster"><h3 title="Pulp Fiction">Pulp Fiction</h3><div class="rating"><span>★ 8.9</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Fight Club to watchlist">＋</button><img src="assets/poster-interstellar.jpg" loading="lazy" decoding="async" alt="Fight Club poster"><h3 title="Fight Club">Fight Club</h3><div class="rating"><span>★ 8.8</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add The Matrix to watchlist">＋</button><img src="assets/poster-arrival.jpg" loading="lazy" decoding="async" alt="The Matrix poster"><h3 title="The Matrix">The Matrix</h3><div class="rating"><span>★ 8.7</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Gladiator to watchlist">＋</button><img src="assets/poster-inception.jpg" loading="lazy" decoding="async" alt="Gladiator poster"><h3 title="Gladiator">Gladiator</h3><div class="rating"><span>★ 8.5</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Parasite to watchlist">＋</button><img src="assets/poster-lotr.jpg" loading="lazy" decoding="async" alt="Parasite poster"><h3 title="Parasite">Parasite</h3><div class="rating"><span>★ 8.5</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+            </div>
+        </section>
+
+        <section class="content-section movie-section weekly-section">
+            <div class="section-heading">
+                <h2>Top on IMDb this week</h2>
+                <div class="slider-arrows" data-slider-controls="slider-3"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div>
+            </div>
+            <div class="movie-grid" data-slider-track>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Inception to watchlist">＋</button><img src="assets/poster-star-wars.jpg" loading="lazy" decoding="async" alt="Inception poster"><h3 title="Inception">Inception</h3><div class="rating"><span>★ 8.8</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Spider-Man: Across the Spider-Verse to watchlist">＋</button><img src="assets/poster-spider-man.jpg" loading="lazy" decoding="async" alt="Spider-Man: Across the Spider-Verse poster"><h3 title="Spider-Man: Across the Spider-Verse">Spider-Man: Across the Spider-Verse</h3><div class="rating"><span>★ 8.6</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Star Wars: Episode V to watchlist">＋</button><img src="assets/poster-interstellar.jpg" loading="lazy" decoding="async" alt="Star Wars: Episode V poster"><h3 title="Star Wars: Episode V">Star Wars: Episode V</h3><div class="rating"><span>★ 8.7</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add The Lord of the Rings to watchlist">＋</button><img src="assets/poster-arrival.jpg" loading="lazy" decoding="async" alt="The Lord of the Rings poster"><h3 title="The Lord of the Rings">The Lord of the Rings</h3><div class="rating"><span>★ 8.8</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Arrival to watchlist">＋</button><img src="assets/poster-inception.jpg" loading="lazy" decoding="async" alt="Arrival poster"><h3 title="Arrival">Arrival</h3><div class="rating"><span>★ 7.9</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Interstellar to watchlist">＋</button><img src="assets/poster-lotr.jpg" loading="lazy" decoding="async" alt="Interstellar poster"><h3 title="Interstellar">Interstellar</h3><div class="rating"><span>★ 8.7</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Oppenheimer to watchlist">＋</button><img src="assets/poster-star-wars.jpg" loading="lazy" decoding="async" alt="Oppenheimer poster"><h3 title="Oppenheimer">Oppenheimer</h3><div class="rating"><span>★ 8.3</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Dune: Part Two to watchlist">＋</button><img src="assets/poster-spider-man.jpg" loading="lazy" decoding="async" alt="Dune: Part Two poster"><h3 title="Dune: Part Two">Dune: Part Two</h3><div class="rating"><span>★ 8.5</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Whiplash to watchlist">＋</button><img src="assets/poster-interstellar.jpg" loading="lazy" decoding="async" alt="Whiplash poster"><h3 title="Whiplash">Whiplash</h3><div class="rating"><span>★ 8.5</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Joker to watchlist">＋</button><img src="assets/poster-arrival.jpg" loading="lazy" decoding="async" alt="Joker poster"><h3 title="Joker">Joker</h3><div class="rating"><span>★ 8.4</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Mad Max: Fury Road to watchlist">＋</button><img src="assets/poster-inception.jpg" loading="lazy" decoding="async" alt="Mad Max: Fury Road poster"><h3 title="Mad Max: Fury Road">Mad Max: Fury Road</h3><div class="rating"><span>★ 8.1</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+<article class="movie-card"><button type="button" class="add-button" aria-label="Add Blade Runner 2049 to watchlist">＋</button><img src="assets/poster-lotr.jpg" loading="lazy" decoding="async" alt="Blade Runner 2049 poster"><h3 title="Blade Runner 2049">Blade Runner 2049</h3><div class="rating"><span>★ 8.0</span><a href="#">☆ Rate</a><b>ⓘ</b></div><a class="trailer-button" href="#">▶ <span>Trailer</span></a></article>
+            </div>
+        </section>
+
+        <section class="content-section originals-section">
+            <div class="watermark videos-watermark" aria-hidden="true">Videos</div>
+            <div class="section-heading">
+                <div><h2>IMDb Originals</h2><p>Celebrity interviews, trending entertainment stories, and expert analysis</p></div>
+                <div class="slider-arrows" data-slider-controls="slider-4"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div>
+            </div>
+            <div class="originals-grid" data-slider-track>
+                <a href="#" class="original-card"><div class="original-image"><img src="assets/originals-timothee.jpg" alt=""><span>▶ 2:50</span></div><strong>IMDb Staff's Favorite Films Directed by Women</strong><small>Watch now</small></a>
+                <a href="#" class="original-card"><div class="original-image"><img src="assets/originals-timothee.jpg" alt=""><span>▶ 2:50</span></div><strong>Oscars 2024: Photos We Love</strong><small>Watch now</small></a>
+                <a href="#" class="original-card"><div class="original-image"><img src="assets/originals-timothee.jpg" alt=""><span>▶ 2:50</span></div><strong>2024 Oscars Red Carpet Photos</strong><small>Watch now</small></a>
+                <a href="#" class="original-card"><div class="original-image"><img src="assets/originals-timothee.jpg" alt=""><span>▶ 2:50</span></div><strong>Staff Picks: What to Watch in March</strong><small>Watch now</small></a>
+            </div>
+        </section>
+
+        <section class="content-section streaming-section">
+            <div class="section-heading">
+                <h2>What to watch on streaming</h2>
+                <div class="slider-arrows" data-slider-controls="slider-5"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div>
+            </div>
+            <div class="streaming-tabs" role="tablist" aria-label="Streaming services">
+                <input type="radio" name="streaming-service" id="tab-prime" checked>
+                <label for="tab-prime" role="tab" aria-selected="true" aria-controls="streaming-panel">Prime Video</label>
+                <input type="radio" name="streaming-service" id="tab-disney">
+                <label for="tab-disney" role="tab" aria-selected="false" aria-controls="streaming-panel">Disney+</label>
+                <input type="radio" name="streaming-service" id="tab-hulu">
+                <label for="tab-hulu" role="tab" aria-selected="false" aria-controls="streaming-panel">Hulu</label>
+                <input type="radio" name="streaming-service" id="tab-netflix">
+                <label for="tab-netflix" role="tab" aria-selected="false" aria-controls="streaming-panel">Netflix</label>
+                <input type="radio" name="streaming-service" id="tab-hbo">
+                <label for="tab-hbo" role="tab" aria-selected="false" aria-controls="streaming-panel">HBO Max</label>
+            </div>
+            <div class="streaming-grid" data-slider-track id="streaming-panel" role="tabpanel" aria-live="polite" aria-label="Streaming titles">
+                <article class="stream-card"><img src="assets/last-of-us.jpg" alt="The Last of Us poster"><strong>The Last of Us</strong><div class="rating"><span>★ 8.9</span><a href="#">☆ Rate</a></div></article>
+                <article class="stream-card"><img src="assets/last-of-us.jpg" alt="The Last of Us poster"><strong>The Last of Us</strong><div class="rating"><span>★ 8.9</span><a href="#">☆ Rate</a></div></article>
+                <article class="stream-card"><img src="assets/last-of-us.jpg" alt="The Last of Us poster"><strong>The Last of Us</strong><div class="rating"><span>★ 8.9</span><a href="#">☆ Rate</a></div></article>
+                <article class="stream-card"><img src="assets/last-of-us.jpg" alt="The Last of Us poster"><strong>The Last of Us</strong><div class="rating"><span>★ 8.9</span><a href="#">☆ Rate</a></div></article>
+                <article class="stream-card"><img src="assets/last-of-us.jpg" alt="The Last of Us poster"><strong>The Last of Us</strong><div class="rating"><span>★ 8.9</span><a href="#">☆ Rate</a></div></article>
+                <article class="stream-card"><img src="assets/last-of-us.jpg" alt="The Last of Us poster"><strong>The Last of Us</strong><div class="rating"><span>★ 8.9</span><a href="#">☆ Rate</a></div></article>
+            </div>
+        </section>
+
+        <section class="content-section explore-section">
+            <div class="watermark explore-watermark" aria-hidden="true">Explore</div>
+            <div class="section-heading"><h2>Top box office (US) <span class="heading-arrow">→</span></h2><p>Weekend of March 8–10</p></div>
+            <div class="box-office-grid" data-slider-track>
+                <article class="box-office-card"><b>1</b><img src="assets/poster-star-wars.jpg" loading="lazy" alt=""><div><strong>Kung Fu Panda 4</strong><small>$58M</small><span>★ 6.6　☆ Rate</span></div></article>
+                <article class="box-office-card"><b>2</b><img src="assets/poster-dune.jpg" loading="lazy" alt=""><div><strong>Dune: Part Two</strong><small>$46M</small><span>★ 8.9　☆ Rate</span></div></article>
+                <article class="box-office-card"><b>3</b><img src="assets/poster-imaginary.jpg" loading="lazy" alt=""><div><strong>Imaginary</strong><small>$9.9M</small><span>★ 4.8　☆ Rate</span></div></article>
+                <article class="box-office-card"><b>4</b><img src="assets/poster-cabrini.jpg" loading="lazy" alt=""><div><strong>Cabrini</strong><small>$7.2M</small><span>★ 8.0　☆ Rate</span></div></article>
+                <article class="box-office-card"><b>5</b><img src="assets/poster-bob-marley.jpg" loading="lazy" alt=""><div><strong>Bob Marley: One Love</strong><small>$4.1M</small><span>★ 6.5　☆ Rate</span></div></article>
+                <article class="box-office-card"><b>6</b><img src="assets/poster-ordinary-angels.jpg" loading="lazy" alt=""><div><strong>Ordinary Angels</strong><small>$2M</small><span>★ 7.8　☆ Rate</span></div></article>
+            </div>
+        </section>
+
+        <section class="content-section coming-section">
+            <div class="section-heading"><div><h2>Coming soon to theaters <span class="heading-arrow">→</span></h2><p>Trailers for Upcoming Releases</p></div><div class="slider-arrows" data-slider-controls="slider-6"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div></div>
+            <div class="coming-grid" data-slider-track>
+                <a href="#" class="coming-card"><div><img src="assets/coming-godzilla.jpg" alt=""><span>▶ 2:50</span></div><small>□ March 29</small><strong>Godzilla x Kong: The New Empire</strong></a>
+                <a href="#" class="coming-card"><div><img src="assets/coming-ghostbusters.jpg" alt=""><span>▶ 2:50</span></div><small>□ March 22</small><strong>Ghostbusters: Frozen Empire</strong></a>
+                <a href="#" class="coming-card"><div><img src="assets/coming-immaculate.jpg" alt=""><span>▶ 2:50</span></div><small>□ March 22</small><strong>Immaculate</strong></a>
+                <a href="#" class="coming-card"><div><img src="assets/coming-challengers.jpg" alt=""><span>▶ 2:50</span></div><small>□ April 26</small><strong>Challengers</strong></a>
+            </div>
+        </section>
+
+        <section class="content-section birthday-section">
+            <div class="section-heading"><h2>Born Today <span class="heading-arrow">→</span></h2><div class="slider-arrows" data-slider-controls="slider-7"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div></div>
+            <p class="section-subtitle">People born on October 12</p>
+            <div class="birthday-grid" data-slider-track>
+                <a href="#"><img src="assets/originals-timothee.jpg" alt=""><strong>Josh Hutcherson</strong><small>31</small></a>
+                <a href="#"><img src="assets/originals-timothee.jpg" alt=""><strong>Josh Hutcherson</strong><small>31</small></a>
+                <a href="#"><img src="assets/originals-timothee.jpg" alt=""><strong>Josh Hutcherson</strong><small>31</small></a>
+                <a href="#"><img src="assets/originals-timothee.jpg" alt=""><strong>Josh Hutcherson</strong><small>31</small></a>
+                <a href="#"><img src="assets/originals-timothee.jpg" alt=""><strong>Josh Hutcherson</strong><small>31</small></a>
+                <a href="#"><img src="assets/originals-timothee.jpg" alt=""><strong>Josh Hutcherson</strong><small>31</small></a>
+                <a href="#"><img src="assets/originals-timothee.jpg" alt=""><strong>Josh Hutcherson</strong><small>31</small></a>
+            </div>
+        </section>
+
+        <section class="content-section news-section">
+            <div class="section-heading"><h2>Top News <span class="heading-arrow">→</span></h2><div class="slider-arrows" data-slider-controls="slider-8"><button type="button" data-slider-prev aria-label="Previous slide">‹</button><button type="button" data-slider-next aria-label="Next slide">›</button></div></div>
+            <div class="news-grid" data-slider-track>
+                <a href="#" class="news-card"><img src="assets/news-dune.jpg" alt=""><div><strong>Dune 2's Most Powerful Characters, Ranked</strong><small>20 Feb 2024 · username</small><span>Comic book resources</span></div></a>
+                <a href="#" class="news-card"><img src="assets/news-boxoffice.jpg" alt=""><div><strong>Box Office: Mark Wahlberg's ‘Arthur the King’ Makes $825,000 in Previews</strong><small>15 March 2024 · username</small><span>Variety · Film News</span></div></a>
+                <a href="#" class="news-card"><img src="assets/news-dune2.jpg" alt=""><div><strong>Dune: Where Feyd-Rautha Is In Part 1 Explained</strong><small>20 Feb 2024 · username</small><span>Comic book resources</span></div></a>
+            </div>
+        </section>
+
+
+
+        <section class="content-section interaction-section" aria-labelledby="interaction-title">
+            <div class="section-heading">
+                <div><h2 id="interaction-title">Explore IMDb</h2><p>Helpful tools and answers</p></div>
+            </div>
+
+            <div class="interaction-layout">
+                <section class="interaction-card" aria-labelledby="faq-title">
+                    <h3 id="faq-title">Frequently asked questions</h3>
+                    <details class="faq-item">
+                        <summary>How are IMDb ratings calculated?</summary>
+                        <p>IMDb ratings are based on votes submitted by registered users. This example answer can later be replaced with dynamic content.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Where can I find a movie's cast?</summary>
+                        <p>Open a movie title page and look for the cast and crew section.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I save titles for later?</summary>
+                        <p>Use the watchlist control to keep track of titles you want to see.</p>
+                    </details>
+                </section>
+
+                <section class="interaction-card" aria-labelledby="feedback-title">
+                    <h3 id="feedback-title">Send us a message</h3>
+                    <form class="feedback-form" id="feedback-form" action="#" method="post">
+                        <div class="form-field">
+                            <label for="feedback-name">Your name</label>
+                            <input id="feedback-name" name="name" type="text" placeholder="Enter your name" required minlength="2">
+                        </div>
+                        <div class="form-field">
+                            <label for="feedback-email">Email address</label>
+                            <input id="feedback-email" name="email" type="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="feedback-topic">Message</label>
+                            <textarea id="feedback-topic" name="message" rows="4" placeholder="Write your message" required minlength="10"></textarea>
+                        </div>
+                        <button class="imdb-action-button" type="submit" data-form-submit>Send message</button>
+                        <p class="form-note">All fields are required. The browser checks the entered data before submission.</p>
+                    </form>
+                </section>
+            </div>
+
+            <div class="interaction-actions">
+                <label class="imdb-action-button modal-open" for="info-modal-toggle" data-modal-open>Open information window</label>
+            </div>
+        </section>
+    </main>
+
+        <input class="modal-toggle" type="checkbox" id="info-modal-toggle">
+        <div class="modal-layer" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <label class="modal-backdrop" for="info-modal-toggle" aria-label="Close information window"></label>
+            <div class="modal-window">
+                <label class="modal-close" for="info-modal-toggle" aria-label="Close">×</label>
+                <h2 id="modal-title">About this IMDb page</h2>
+                <p>This modal window is a structural template. Its open and close controls are prepared for JavaScript.</p>
+                <label class="imdb-action-button modal-ok" for="info-modal-toggle">Got it</label>
+            </div>
+        </div>
+
+        <input class="cookie-toggle" type="checkbox" id="cookie-dismissed">
+        <div class="cookie-notice" role="region" aria-label="Cookie notice">
+            <div><strong>Your privacy matters</strong><p>We use cookies to improve your experience on this demo page.</p></div>
+            <label for="cookie-dismissed" class="imdb-action-button" data-cookie-accept>Accept</label>
+            <label for="cookie-dismissed" class="cookie-close" data-cookie-close aria-label="Close cookie notice">×</label>
+        </div>
+
+    <footer class="site-footer">
+        <a class="footer-signup" href="#">Unlock the full IMDb experience – Sign up now</a>
+        <div class="footer-columns">
+            <div><a href="#">Get the IMDb app ↗</a><a href="#">IMDbPro ↗</a><a href="#">IMDb Developer ↗</a><a href="#">Box Office Mojo ↗</a></div>
+            <div><a href="#">Advertising ↗</a><a href="#">Jobs ↗</a><a href="#">Press Room ↗</a></div>
+            <div><a href="#">Help ↗</a><a href="#">Site Index ↗</a><a href="#">Conditions of Use</a><a href="#">Privacy Policy</a><a href="#">Your Ads Privacy Choices</a><a href="#" data-cookie-reset>Cookie preferences</a></div>
+            <div class="social-links"><a href="#" aria-label="TikTok">♪</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a></div>
+        </div>
+        <p class="copyright">© 1990–2024 by IMDb.com, Inc.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
